@@ -7,11 +7,11 @@ n = 123
 # n = int(n)
 
 for i in range(1, 50):
-    after   = str(n + i)
-    before  = str(n - i)
+    after = str(n + i)
+    before = str(n - i)
     if after == after[::-1]:
         print(after)
         break
-    if before  == before[::-1]:
+    if before == before[::-1]:
         print(before)
         break

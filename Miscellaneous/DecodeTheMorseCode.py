@@ -4,11 +4,12 @@ def decodeMorse(morse_code):
     morse_code = [] * 100
     print(morse_code)
 #     i = 0
-    
+
 #     for word in words:
 #           morse_code[i].append(word.split(" "))
 #           i += 1
-          
+
     print(morse_code)
+
 
 print(decodeMorse('.... . -.--   .--- ..- -.. .'))

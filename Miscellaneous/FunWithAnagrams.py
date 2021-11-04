@@ -4,11 +4,10 @@ def funWithAnagrams(text):
     text = sorted(text)
     while i < len(text) - 1:
         if Counter(text[i]) == Counter(text[i+1]):
-                text.remove(text[i+1])
-                i = 0
+            text.remove(text[i+1])
+            i = 0
         else:
             i += 1
-        
 
     return sorted(text)
 

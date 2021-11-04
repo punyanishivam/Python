@@ -5,6 +5,7 @@ def sum_of_digits(n):
         n = int(n / 10)
     return sum1
 
+
 def join_point(s1, s2):
     for _ in range(50):
         if s1 == s2:
@@ -12,5 +13,6 @@ def join_point(s1, s2):
         s1 += sum_of_digits(s1)
         s2 += sum_of_digits(s2)
     return "NOOOOO"
+
 
 print(join_point(57, 78))

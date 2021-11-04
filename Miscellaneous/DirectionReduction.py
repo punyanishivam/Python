@@ -19,5 +19,6 @@ def dir_reduc(arr):
             result.append(i)
     return result
 
+
 a = ["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]
 print(dir_reduc(a))

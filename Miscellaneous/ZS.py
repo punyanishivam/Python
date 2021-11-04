@@ -8,5 +8,6 @@ def main():
             if (j > (i/j)) and i < (i+j):
                 print(i+1)
         i += 1
-            
+
+
 print(main())

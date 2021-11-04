@@ -1,10 +1,10 @@
 def disemvowel(string):
 
     vowels = ['a', 'e', 'i', 'o', 'u']
-    
+
     for i in vowels:
         string = string.replace(i, "")
-        
+
     return string
 
 

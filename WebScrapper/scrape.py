@@ -8,12 +8,12 @@ year = now.year
 
 def url_to_file(url):
 
-	r = requests.get(url)
+    r = requests.get(url)
 
-	if r.status_code == 200:
-		html_text = r.text
-		return html_text
-	return ""
+    if r.status_code == 200:
+        html_text = r.text
+        return html_text
+    return ""
 
 
 url = "https://www.boxofficemojo.com/year/world/"
@@ -27,11 +27,11 @@ table_class = ".imdb-scroll-table"
 r_table = r_html.find(table_class)
 
 if len(r_table) == 1:
-	parsed_table = r_table[0]
-	rows = parsed_table.find('tr')
-	header = rows[0]
-	for row in rows[1:]:
-		print(row.text)
-		cols = row.find('td')
-		for i, x in enumerate(cols):
-			print(i, x.text, '\n\n')
+    parsed_table = r_table[0]
+    rows = parsed_table.find('tr')
+    header = rows[0]
+    for row in rows[1:]:
+        print(row.text)
+        cols = row.find('td')
+        for i, x in enumerate(cols):
+            print(i, x.text, '\n\n')

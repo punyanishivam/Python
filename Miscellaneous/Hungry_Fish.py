@@ -13,5 +13,5 @@ while len(inputList) > 1:
         else:
             inputList.insert(1, inputList[0] - 1)
             moves += 1
-    
+
 print(moves)

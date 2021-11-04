@@ -18,8 +18,9 @@ def LetterChanges(str1):
             final += i.upper()
         else:
             final += i
-      
+
     return final
 
-# keep this function call here 
+
+# keep this function call here
 print(LetterChanges("hello*3"))

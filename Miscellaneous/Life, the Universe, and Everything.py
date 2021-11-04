@@ -1,8 +1,8 @@
-#Life, the Universe, and Everything
+# Life, the Universe, and Everything
 
 n = int(input())
 
 while n != 42:
-	print(n)
+    print(n)
 
-	i = int(input())
+    i = int(input())

@@ -11,8 +11,9 @@ def DNA_strand(dna):
             result += "G"
         else:
             result += dna[i]
-            
+
     return result
+
 
 dna = "AAAA"
 print(DNA_strand(dna))

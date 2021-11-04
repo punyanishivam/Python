@@ -10,13 +10,14 @@ def tribonacci(signature, n):
     third = signature[2]
 
     for i in range(n - 3):
-    	value = first + second + third
-    	result.append(value)
-    	first = second
-    	second = third
-    	third = value
-    
+        value = first + second + third
+        result.append(value)
+        first = second
+        second = third
+        third = value
+
     return result
+
 
 signature = [1, 1, 1]
 n = 10

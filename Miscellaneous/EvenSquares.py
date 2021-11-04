@@ -4,8 +4,8 @@ print(even_squares1)
 even_squares = []
 
 for i in range(100):
-	if i % 2 == 0:
-		even_squares.append(i * i)
+    if i % 2 == 0:
+        even_squares.append(i * i)
 
 print(even_squares)
 

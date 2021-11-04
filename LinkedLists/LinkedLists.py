@@ -1,24 +1,25 @@
-#Linked List
+# Linked List
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
-    
+
+
 class LinkedList:
     def __init__(self):
         self.head = None
-    
+
     def print_elements(self):
         temp = self.head
         while temp is not None:
             print(temp.data)
             temp = temp.next
-      
+
     def insert_at_start(self, data):
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node
-    
+
     def insert_at_end(self, data):
         new_node = Node(data)
         if self.head is None:
@@ -28,7 +29,7 @@ class LinkedList:
         while temp is not None:
             temp = temp.next
             temp.next = new_node
-    
+
     def insert_after_item(self, data, key):
         new_node = Node(data)
         temp = self.head
@@ -41,8 +42,8 @@ class LinkedList:
             else:
                 new_node.next = temp.next
                 temp.next = new_node
-      
-    
+
+
 ll = LinkedList()
 node1 = Node(5)
 node2 = Node(7)
